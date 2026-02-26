@@ -13,7 +13,7 @@ public class Ejercicio2_2 {
         System.out.println("Ingrese el nombre del primer planeta:");
         String name1 = input.nextLine();
         
-        System.out.println("Ingrese la cantidad de satelites de" +name1+":");
+        System.out.println("Ingrese la cantidad de satelites de " +name1+":");
         int satellite1 = input.nextInt();
         
         System.out.println("Ingrese la masa en kilogramos de "+name1+":");
@@ -28,11 +28,11 @@ public class Ejercicio2_2 {
         System.out.println("Ingrese la distancia media al Sol en millones de kilómetros de "+name1+":");
         int distance1 = input.nextInt()*1000000;
         
-        System.out.println("Ingrese el tipo de planeta de"+name1+"(gaseoso, terrestre o enano):");
+        System.out.println("Ingrese el tipo de planeta de "+name1+" (gaseoso, terrestre o enano):");
         String type1 = input.next().toUpperCase();
         Planeta.TipoPlaneta tipo1 = Planeta.TipoPlaneta.valueOf(type1);
         
-        System.out.println("Ingrese '(true)' si "+name1+" es observable a simple vista, 'false' de lo contrario:");
+        System.out.println("Ingrese 'true' si "+name1+" es observable a simple vista, 'false' de lo contrario:");
         boolean observable1 = input.nextBoolean();
         
         input.nextLine();
@@ -43,7 +43,7 @@ public class Ejercicio2_2 {
         System.out.println("Ingrese el nombre del segundo planeta:");
         String name2 = input.nextLine();
         
-        System.out.println("Ingrese la cantidad de satelites de" +name2+":");
+        System.out.println("Ingrese la cantidad de satelites de " +name2+":");
         int satellite2 = input.nextInt();
         
         System.out.println("Ingrese la masa en kilogramos de "+name2+":");
@@ -58,11 +58,11 @@ public class Ejercicio2_2 {
         System.out.println("Ingrese la distancia media al Sol en millones de kilómetros de "+name2+":");
         int distance2 = input.nextInt()*1000000;
         
-        System.out.println("Ingrese el tipo de planeta de"+name2+"(gaseoso, terrestre o enano):");
+        System.out.println("Ingrese el tipo de planeta de "+name2+" (gaseoso, terrestre o enano):");
         String type2 = input.next().toUpperCase();
         Planeta.TipoPlaneta tipo2 = Planeta.TipoPlaneta.valueOf(type2);
         
-        System.out.println("Ingrese '(true)' si "+name2+" es observable a simple vista, 'false' de lo contrario:");
+        System.out.println("Ingrese 'true' si "+name2+" es observable a simple vista, 'false' de lo contrario:");
         boolean observable2 = input.nextBoolean();
         
         System.out.println("\n");
