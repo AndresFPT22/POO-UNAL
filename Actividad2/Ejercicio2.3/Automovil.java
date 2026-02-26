@@ -32,7 +32,6 @@ public class Automovil {
         
         if(incrementoVelocidad+currentSpeed<maximumSpeed){
             currentSpeed+=incrementoVelocidad;
-            System.out.println("Velocidad actual:"+currentSpeed);
         }
         
         else{
@@ -44,7 +43,6 @@ public class Automovil {
         
         if(currentSpeed-decrementoVelocidad>=0){
             currentSpeed-=decrementoVelocidad;
-            System.out.println("Velocidad actual:"+currentSpeed);
         }
         
         else{
