@@ -101,20 +101,20 @@ public class Figuras{
             
         }
         
-        //Así esta en el ejercicio pero un trángulo rectángulo nunca podra ser equilatero
+        //Así esta en el ejercicio pero un triángulo rectángulo nunca podrá ser equilátero
         
         public void DeterminarTipoTriangulo(){
             
             if(baseT==heightT && baseT==CalcularHipotenusa()){
-                System.out.println("Es un triángulo equilatero");
+                System.out.println("El triángulo ingresado es un triángulo equilátero");
             }
             
             else if(baseT!=heightT && baseT!=CalcularHipotenusa()){
-                System.out.println("Es un triángulo escaleno");
+                System.out.println("El triángulo ingresado es un triángulo escaleno");
             }
             
             else{
-                System.out.println("Es un triángulo isoceles");
+                System.out.println("El triángulo ingresado es un triángulo isósceles");
             }
             
         }
