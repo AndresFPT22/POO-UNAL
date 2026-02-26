@@ -21,6 +21,8 @@ public class Ejercicio2_5 {
         String type = input.next().toUpperCase();
         CuentaBancaria.type accountType = CuentaBancaria.type.valueOf(type);
         
+        System.out.println("\n");
+        
         var BankAccount = new CuentaBancaria(names, lastNames, accountNumber, accountType);
         
         do{
@@ -31,15 +33,19 @@ public class Ejercicio2_5 {
             System.out.println("Ingrese 'salir' si desea salir del sistema:");
             String value = input.next().toLowerCase().trim();
             
+            System.out.println("\n");
+            
             if(value.equals("1")){
                 
-                System.out.println("Saldo en la cuenta "+accountNumber+"es:"+BankAccount.Balance());
+                System.out.println("Saldo en la cuenta "+accountNumber+" es: "+BankAccount.Balance());
+                System.out.println("\n");
                 
             }
             
             if(value.equals("2")){
                 
                 BankAccount.print();
+                System.out.println("\n");
                 
             }
             
@@ -47,7 +53,8 @@ public class Ejercicio2_5 {
                 
                 System.out.println("Ingrese cuanto desea consignar a la cuenta "+accountNumber);
                 long addedMoney = input.nextLong();
-                BankAccount.ConsignMoney(addedMoney);  
+                BankAccount.ConsignMoney(addedMoney);
+                System.out.println("\n");
                 
             }
             
@@ -56,11 +63,13 @@ public class Ejercicio2_5 {
                 System.out.println("Ingrese cuanto desea retirar de la cuenta "+accountNumber);
                 long moneyTaken = input.nextLong();
                 BankAccount.WithdrawMoney(moneyTaken);
+                System.out.println("\n");
                 
             }
             
             if(value.equals("salir")){
                 
+                System.out.println("Saliste exitosamente del sistema");
                 break;
                 
             }
