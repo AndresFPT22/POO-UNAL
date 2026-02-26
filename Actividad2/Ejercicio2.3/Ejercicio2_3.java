@@ -19,11 +19,11 @@ public class Ejercicio2_3 {
         
         input.nextLine();
         
-        System.out.println("Ingrese el tipo de combustible:");
+        System.out.println("Ingrese el tipo de combustible(gasolina, bioetanol, diesel, biodiesel o gas_natural:");
         String fuel = input.nextLine().toUpperCase();
         Automovil.tipoCombustible fuelType = Automovil.tipoCombustible.valueOf(fuel);
         
-        System.out.println("Ingrese el tipo de automóvil");
+        System.out.println("Ingrese el tipo de automóvil(ciudad, compacto, subcompacto, familiar, ejecutivo o SUV");
         String car = input.nextLine().toUpperCase();
         Automovil.tipoAutomovil carType = Automovil.tipoAutomovil.valueOf(car);
         
@@ -41,7 +41,7 @@ public class Ejercicio2_3 {
         
         input.nextLine();
         
-        System.out.println("Ingrese el color del automóvil(blanco, negro, naranja, amarillo, verde, azul o violeta):");
+        System.out.println("Ingrese el color del automóvil(blanco, negro, rojo, naranja, amarillo, verde, azul o violeta):");
         String color = input.nextLine().toUpperCase();
         Automovil.tipoColor colorType = Automovil.tipoColor.valueOf(color);
         carro.setColorType(colorType);
@@ -61,10 +61,7 @@ public class Ejercicio2_3 {
         System.out.println("Ingrese la distancia en kilómetros que recorrera el automóvil: ");
         int distance = input.nextInt();
         
-        carro.print();
-        
-        System.out.println("La velocidad máxima del vehículo es: "+carro.getMaximumSpeed());
-        System.out.println("El color del automóvil es: "+carro.getColorType());
+        System.out.println("\n"); 
         
         carro.accelerate(speedIncrease);
         carro.decelerate(speedDecrease);
@@ -72,6 +69,13 @@ public class Ejercicio2_3 {
         System.out.println("Ingrese 'true' si quiere frenar o 'false' de lo contrario");
         boolean sino = input.nextBoolean();
         carro.break_(sino);
+        
+        System.out.println("\n");
+        
+        carro.print();
+        
+        System.out.println("La velocidad máxima del vehículo es: "+carro.getMaximumSpeed());
+        System.out.println("El color del automóvil es: "+carro.getColorType());
         
         System.out.println("La velocidad actual del vehículo es: "+carro.getCurrentSpeed());
         
